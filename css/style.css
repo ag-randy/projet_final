@@ -1,0 +1,100 @@
+/* VARIABLES */
+:root {
+    --primary: #e4022b;
+    --primary-hover: #c40024;
+    --secondary: #efeff6;
+}
+
+/* BACKGROUNDS */
+.bg-primary {
+    background-color: var(--primary) !important;
+}
+
+.bg-secondary {
+    background-color: var(--secondary) !important;
+}
+
+/* TEXT */
+.text-primary {
+    color: var(--primary) !important;
+}
+
+.text-secondary {
+    color: #555 !important;
+}
+
+/* BUTTONS */
+.btn-primary {
+    background-color: var(--primary);
+    border-color: var(--primary);
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-hover);
+    border-color: var(--primary-hover);
+}
+
+/* SECONDARY BUTTON */
+.btn-secondary {
+    background-color: var(--secondary);
+    border-color: var(--secondary);
+    color: #000;
+}
+
+.btn-secondary:hover {
+    background-color: var(--primary);
+    border-color: var(--primary);
+    color: white;
+}
+
+/* LINKS */
+a {
+    color: var(--primary);
+}
+
+a:hover {
+    color: var(--primary-hover);
+}
+
+/* CARDS */
+.card {
+    border: none;
+    border-radius: 10px;
+}
+
+/* NAVBAR (optionnel mais propre) */
+.navbar-dark.bg-dark {
+    background-color: #111 !important;
+}
+
+/* SECTION BACKGROUND */
+.bg-light {
+    background-color: var(--secondary) !important;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* NAVBAR */
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active 
+{
+    text-decoration: underline;
+    text-underline-offset: 10px; /* Espace moderne entre le texte et le trait */
+    color: #fff !important;    /* Force le blanc */
+}
+
+.navbar-brand,
+.navbar-brand:hover {
+    color: #fff !important;
+}
+
+/* IMAGES */
+.img-fixed-size {
+    width: 700px;
+    max-width: 100%; /* Important pour le responsive */
+    height: 350px;
+    object-fit: cover;
+}

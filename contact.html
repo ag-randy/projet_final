@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digicel - Contact</title>
+
+    <!-- Bootswatch / Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.2/dist/flatly/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- Ton CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">Digicel.</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+                <li class="nav-item"><a class="nav-link" href="apropos.html">À propos</a></li>
+                <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="projets.html">Projets</a></li>
+                <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- SECTION CONTACT -->
+<section class="py-5">
+    <div class="container">
+
+        <div class="text-center mb-4">
+            <h2 class="fw-bold text-primary mb-4">Contactez-nous.</h2>
+            <p class="text-secondary lead">Nous sommes disponibles pour répondre à toutes vos questions</p>
+        </div>
+
+        <div class="row g-5">
+
+            <!-- INFOS -->
+            <div class="col-lg-5">
+
+                <div class="d-flex mb-4">
+                    <i class="bi bi-geo-alt-fill text-primary fs-3 me-3"></i>
+                    <div>
+                        <h6 class="fw-bold mb-1">Adresse</h6>
+                        <p class="mb-0 text-secondary">
+                            171 Angle Ave Jean Paul IV & Impasse Desrouleaux, Turgeau, Port-au-Prince
+                        </p>
+                    </div>
+                </div>
+
+                <div class="d-flex mb-4">
+                    <i class="bi bi-telephone-fill text-primary fs-3 me-3"></i>
+                    <div>
+                        <h6 class="fw-bold mb-1">Téléphone</h6>
+                        <p class="mb-0 text-secondary">+509 1234 5678</p>
+                    </div>
+                </div>
+
+                <div class="d-flex mb-4">
+                    <i class="bi bi-envelope-fill text-primary fs-3 me-3"></i>
+                    <div>
+                        <h6 class="fw-bold mb-1">Email</h6>
+                        <p class="mb-0 text-secondary">contact@digicel.ht</p>
+                    </div>
+                </div>
+
+                <div class="d-flex mb-4">
+                    <i class="bi bi-globe-americas text-primary fs-3 me-3"></i>
+                    <div>
+                        <h6 class="fw-bold mb-1">Site web</h6>
+                        <p class="mb-0 text-secondary">digicel-hwsite.netlify.app</p>
+                    </div>
+                </div>
+
+                <div class="d-flex">
+                    <i class="bi bi-clock-fill text-primary fs-3 me-3"></i>
+                    <div>
+                        <h6 class="fw-bold mb-1">Heures d’ouverture</h6>
+                        <p class="mb-0 text-secondary">Lundi - Samedi : 8:00AM - 8:00PM</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- FORMULAIRE -->
+            <div class="col-lg-7">
+
+                <form 
+                    action="https://formspree.io/f/TON_ID"
+                    method="POST"
+                    class="p-4 rounded bg-light needs-validation"
+                    novalidate
+                >
+
+                    <div class="row g-3">
+
+                        <!-- NOM -->
+                        <div class="col-md-6">
+                            <label class="form-label">Nom</label>
+                            <input type="text" name="nom" class="form-control" placeholder="Votre nom" required>
+                            <div class="invalid-feedback">
+                                Veuillez entrer votre nom.
+                            </div>
+                        </div>
+
+                        <!-- EMAIL -->
+                        <div class="col-md-6">
+                            <label class="form-label">Email</label>
+                            <input type="email" name="email" class="form-control" placeholder="Votre email" required>
+                            <div class="invalid-feedback">
+                                Veuillez entrer un email valide.
+                            </div>
+                        </div>
+
+                        <!-- SUJET -->
+                        <div class="col-12">
+                            <label class="form-label">Sujet</label>
+                            <input type="text" name="sujet" class="form-control" placeholder="Sujet du message" required>
+                            <div class="invalid-feedback">
+                                Veuillez entrer un sujet.
+                            </div>
+                        </div>
+
+                        <!-- MESSAGE -->
+                        <div class="col-12">
+                            <label class="form-label">Message</label>
+                            <textarea name="message" rows="5" class="form-control" placeholder="Votre message..." required></textarea>
+                            <div class="invalid-feedback">
+                                Veuillez écrire votre message.
+                            </div>
+                        </div>
+
+                        <!-- CHECKBOX -->
+                        <div class="col-12">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" required>
+                                <label class="form-check-label">
+                                    J'accepte les conditions
+                                </label>
+                                <div class="invalid-feedback">
+                                    Vous devez accepter avant d’envoyer.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- BUTTON -->
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-primary w-100 fw-semibold">
+                                Envoyer le message
+                            </button>
+                        </div>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer class="bg-dark text-white pt-5 pb-4">
+    <div class="container">
+        <div class="row g-4">
+
+            <div class="col-lg-4">
+                <h4 class="fw-bold">Digicel<span class="text-primary">.</span></h4>
+                <p class="mt-3">
+                    Entreprise de télécommunication engagée à connecter les communautés en Haïti.
+                </p>
+            </div>
+
+            <div class="col-lg-4">
+                <h6 class="fw-bold mb-3">Navigation</h6>
+                <ul class="list-unstyled">
+                    <li><a class="text-white text-decoration-none" href="index.html">Accueil</a></li>
+                    <li><a class="text-white text-decoration-none" href="apropos.html">À propos</a></li>
+                    <li><a class="text-white text-decoration-none" href="services.html">Services</a></li>
+                    <li><a class="text-white text-decoration-none" href="projets.html">Projets</a></li>
+                    <li><a class="text-white text-decoration-none" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-4">
+                <h6 class="fw-bold mb-3">Contact</h6>
+                <p class="mb-1">+509 1234 5678</p>
+                <p class="mb-1">contact@digicel.ht</p>
+                <p class="mb-0">Port-au-Prince, Haïti</p>
+            </div>
+
+        </div>
+
+        <div class="text-center mt-4 pt-3 border-top">
+            <p class="mb-0">© 2026 Digicel. Tous droits réservés.</p>
+        </div>
+    </div>
+</footer>
+
+<!-- BOOTSTRAP JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- VALIDATION SCRIPT -->
+<script>
+(function () {
+    'use strict';
+
+    const forms = document.querySelectorAll('.needs-validation');
+
+    Array.prototype.slice.call(forms).forEach(function (form) {
+        form.addEventListener('submit', function (event) {
+
+            if (!form.checkValidity()) {
+                event.preventDefault();
+                event.stopPropagation();
+            }
+
+            form.classList.add('was-validated');
+
+        }, false);
+    });
+
+})();
+</script>
+
+</body>
+</html>
