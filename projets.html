@@ -6,15 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digicel - Accueil</title>
 
-    <!-- Bootswatch / Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.2/dist/flatly/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     
     <!-- Ton CSS -->
     <link rel="stylesheet" href="css/style.css">
+
 </head>
+
 
 <body>
 
@@ -43,7 +47,7 @@
 <body>
 
     <!-- SECTION 1 : INTRO -->
-    <section class="py-5">
+    <section class="py-5 hero-animate">
         <div class="container text-center">
             <h2 class="fw-bold text-primary mb-4">Nos Projets.</h2>
             <p class="text-secondary lead">
@@ -56,7 +60,7 @@
 
 
     <!-- PROJET EDUCATION  ET FONDATION -->
-<section class="projects-page py-5 bg-light">
+<section class="projects-page py-5 bg-light hero-animate">
     <div class="container">
         <div class="row g-4">
 
@@ -182,7 +186,7 @@
 
 
     <!-- PROJET CULTURE & SPORT -->
-<section class="projects-page py-5">
+<section class="projects-page py-5 reveal">
     <div class="container">
         <div class="row g-4">
 
@@ -306,7 +310,7 @@
 
 
     <!-- SECTION 2 : CTA -->
-    <section class="py-5 bg-secondary text-secondary text-center">
+    <section class="py-5 bg-secondary text-secondary text-center reveal">
         <div class="container">
 
             <h3 class="fw-bold mb-4">
@@ -318,7 +322,7 @@
                 notre équipe est là pour vous aider.
             </p>
             <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center">
-                <a href="contact.html" class="btn btn-primary btn-lg">
+                <a href="contact.html" class="btn btn-primary btn-lg hero-animate">
                     Contactez-nous
                 </a>
             </div>
@@ -329,7 +333,7 @@
 
 
     <!-- FOOTER -->
-    <footer class="bg-dark text-white pt-5 pb-4">
+    <footer class="bg-dark text-white pt-5 pb-4 reveal">
         <div class="container">
             <div class="row g-4">
 
@@ -358,7 +362,6 @@
 
                 <!-- SERVICES -->
                 <div class="col-lg-4 col-md-6">
-                    <h6 class="fw-bold mb-3">Contact</h6>
                     <ul class="list-unstyled">
                         <li class="mb-2"><a href="contact.html" class="text-white text-decoration-none">171 Angle Ave Jean Paul IV & Impasse Desrouleaux, Turgeau, Port-au-Prince</a></li>
                         <li class="mb-2"><a href="contact.html" class="text-white text-decoration-none">+509 1234 5678</a></li>
@@ -374,13 +377,18 @@
                 <p class="mb-0">© 2026 Digicel. Tous droits réservés.</p>
             </div>
         </div>
+
     </footer>
 
-    <!-- Bootstrap JS -->
+<button id="backToTop" class="back-to-top btn btn-primary">
+    <i class="bi bi-arrow-up"></i>
+</button>
+
+<!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
-        <!-- Ton JS -->
-    <script src="js/script.js"></script>
-    
+<!-- Ton JS -->
+ <script src="js/script.js"></script>
+
 </body>
 </html>
