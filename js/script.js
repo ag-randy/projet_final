@@ -4,12 +4,11 @@ history.scrollRestoration = "manual";
 // NAVBAR — active link
 /////////////////////////////////////////////////////
 const navbar = document.querySelector(".navbar");
-const currentPage = window.location.pathname.split("/").pop() || "index";
+const currentPath = window.location.pathname;
 
 document.querySelectorAll(".nav-link").forEach(link => {
-    const href = link.getAttribute("href").replace(".html", "");
-    const page = currentPage.replace(".html", "");
-    link.classList.toggle("active", href === page || (page === "" && href === "index"));
+    const href = link.getAttribute("href");
+    link.classList.toggle("active", href === currentPath);
 });
 
 /////////////////////////////////////////////////////
