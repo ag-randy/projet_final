@@ -53,6 +53,8 @@ a:hover {
 =========================== */
 
 /* Forcer les couleurs custom par-dessus Bootswatch Flatly */
+/* J'utilise plus Bootswatch Flatly mais que je retire cette section du code
+les couleurs cessent de fonctionner normalement donc on ne va pas y toucher*/
 .btn.btn-primary,
 a.btn.btn-primary {
     background-color: var(--primary) !important;
@@ -144,8 +146,24 @@ a.btn.btn-secondary:hover {
     max-width: 100%;
     height: 350px;
     object-fit: cover;
+    object-position: 20%;
 }
 
+/* Tablet */
+@media (max-width: 991px) {
+    .img-fixed-size {
+        width: 100%;
+        height: 400px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+    .img-fixed-size {
+        width: 100%;
+        height: 350px;
+    }
+}
 /* ===========================
    CARDS
 =========================== */
@@ -173,6 +191,10 @@ a.btn.btn-secondary:hover {
 .reveal.active {
     opacity: 1;
     transform: translateY(0);
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 /* ===========================
@@ -239,4 +261,14 @@ footer a:hover {
     border-color: var(--primary-hover) !important;
     transform: translateY(-4px);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Dans ton style.css */
+body {
+    animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }

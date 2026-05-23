@@ -104,3 +104,20 @@ window.addEventListener("load", () => {
     initTypedText();
     initForms();
 });
+
+document.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", (e) => {
+        const href = link.getAttribute("href");
+
+        // Ignorer les ancres, liens externes, et liens vides
+        if (!href || href.startsWith("#") || href.startsWith("http")) return;
+
+        e.preventDefault();
+        document.body.style.opacity = "0";
+        document.body.style.transition = "opacity 0.3s ease";
+
+        setTimeout(() => {
+            window.location.href = href;
+        }, 300);
+    });
+});
